@@ -35,7 +35,7 @@ const FOUNDERS = [
   {
     name: "Major R. Muhammad Anoosh",
     role: "Founder & CEO, ADC Marketing (Pvt.) Ltd. & Neuro Care",
-    bio: `Major R. Muhammad Anoosh is a visionary entrepreneur, business leader, and the Founder & Chief Executive Officer of ADC Marketing (Pvt.) Ltd. With a strong foundation in leadership, strategic planning, and business development, he has successfully established ADC Marketing as a diversified business group operating across multiple industries. His commitment to excellence, integrity, and innovation has enabled the company to build a reputation for delivering quality services and creating long-term value for clients and stakeholders.
+    bio: `Major R. Muhammad Anoosh is a visionary entrepreneur, business leader, and the Founder & Chief Executive Officer of ADC Marketing (Pvt.) Ltd. & Neuro Care. With a strong foundation in leadership, strategic planning, and business development, he has successfully established ADC Marketing as a diversified business group operating across multiple industries. His commitment to excellence, integrity, and innovation has enabled the company to build a reputation for delivering quality services and creating long-term value for clients and stakeholders.
 
 Under his leadership, ADC Marketing has expanded its presence in Real Estate, Construction & Infrastructure Development, Healthcare & Diagnostic Services, Marketing & Advertising Solutions, and Corporate Investments. By combining modern business practices with a customer-centric approach, Major Anoosh continues to drive sustainable growth, foster strategic partnerships, and contribute to the economic development of Pakistan.`,
     image: founderAnoosh,
@@ -43,7 +43,7 @@ Under his leadership, ADC Marketing has expanded its presence in Real Estate, Co
   {
     name: "Rizwan Yousaf",
     role: "Managing Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
-    bio: `Rizwan Yousaf is a seasoned business professional with over 10 years of experience in Sales, Marketing, Business Development, and Operations Management across the Insurance and Real Estate sectors.
+    bio: `Rizwan Yousaf is a seasoned business professional and MD of Neuro care with over 10 years of experience in Sales, Marketing, Business Development, and Operations Management across the Insurance and Real Estate sectors.
 
 He began his professional journey in 2015 in the insurance industry and, through dedication, strong leadership, and consistent performance, progressed from an entry-level position to the role of Regional Sales Head by 2021. During this period, he successfully led operations across the Northern Region of Pakistan, driving business growth, managing high-performing teams, and implementing effective sales and marketing strategies.
 
@@ -51,15 +51,17 @@ Throughout his insurance career, he gained extensive experience in Life Insuranc
 
 Building on this foundation, Rizwan transitioned into the real estate sector, where he has been actively involved in project development, investment planning, sales and marketing, and operational management. His expertise includes evaluating and managing residential and commercial projects, identifying growth opportunities, and creating value-driven solutions for clients and investors.
 
-Currently, he serves as the Managing Director of an emerging real estate and marketing organization, where he leads corporate strategy, business development, sales and marketing operations, and overall organizational growth. Under his leadership, the company is focused on delivering innovative real estate solutions, maintaining high professional standards, and building long-term relationships with clients and stakeholders.
+Currently, he serves as the Managing Director of an emerging real estate and marketing organization and MD of Neuro care, where he leads corporate strategy, business development, sales and marketing operations, and overall organizational growth. Under his leadership, the company is focused on delivering innovative real estate solutions, maintaining high professional standards, and building long-term relationships with clients and stakeholders.
 
 Rizwan’s professional philosophy is centered on integrity, strategic vision, customer satisfaction, and sustainable business growth.`,
     image: founderRizwan,
   },
   {
     name: "Muhammad Usman",
-    role: "Co-Founder, ADC Marketing (Pvt.) Ltd. & Neuro Care",
-    bio: "Driving operations and patient experience with a focus on long-term clinic excellence.",
+    role: "Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
+    bio: `Mr. HM Usman is a dynamic business professional and qualified engineer with over five years of experience in sales and marketing across diverse industries. Combining technical expertise with strong business acumen, he has successfully contributed to business development, strategic planning, client relationship management, and market expansion initiatives.
+
+As the Chief Financial Officer (CFO), Mr. Usman plays a pivotal role in overseeing the organization’s financial operations, budgeting, financial planning, and strategic decision-making. His analytical approach, leadership skills, and commitment to operational excellence have been instrumental in driving sustainable growth and organizational success. With a strong focus on innovation, financial discipline, and business development, he continues to contribute significantly to the achievement of the company’s long-term objectives.`,
     image: founderUsman,
   },
   {

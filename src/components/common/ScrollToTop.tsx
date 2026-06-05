@@ -1,45 +1,103 @@
 import { useState, useEffect } from "react";
 import { ArrowUp } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
 
 export function ScrollToTop() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      // Show button when page is scrolled down more than 300px
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      const scrolled = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      console.log("ScrollToTop - Current Scroll position:", scrolled);
+      setIsVisible(scrolled > 150);
     };
 
-    window.addEventListener("scroll", toggleVisibility);
+    toggleVisibility();
 
+    window.addEventListener("scroll", toggleVisibility, { passive: true });
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+    console.log("ScrollToTop - Clicked! Attempting to scroll to top...");
+    
+    // Method 1: standard smooth window scroll
+    try {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      console.log("ScrollToTop - Method 1 executed");
+    } catch (e) {
+      console.error("ScrollToTop - Method 1 failed:", e);
+    }
+
+    // Method 2: documentElement smooth scroll
+    try {
+      document.documentElement.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      console.log("ScrollToTop - Method 2 executed");
+    } catch (e) {
+      console.error("ScrollToTop - Method 2 failed:", e);
+    }
+
+    // Method 3: body smooth scroll
+    try {
+      document.body.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+      console.log("ScrollToTop - Method 3 executed");
+    } catch (e) {
+      console.error("ScrollToTop - Method 3 failed:", e);
+    }
+
+    // Method 4: Instant fallback if smooth is ignored
+    setTimeout(() => {
+      const currentScroll = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (currentScroll > 10) {
+        console.log("ScrollToTop - Smooth scroll failed or didn't reach top. Falling back to instant scroll.");
+        window.scrollTo(0, 0);
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+      }
+    }, 500);
   };
 
   return (
-    <Button
-      onClick={scrollToTop}
+    <a
+      href="#"
+      onClick={(e) => {
+        e.preventDefault();
+        scrollToTop();
+      }}
       aria-label="Scroll to top"
-      className={cn(
-        "fixed bottom-6 right-6 z-50 h-11 w-11 rounded-full p-0 gradient-cta text-primary-foreground shadow-soft hover:shadow-glow border-0 transition-all duration-300 hover:-translate-y-1 hover:scale-105",
-        isVisible ? "opacity-100 scale-100 translate-y-0 visible" : "opacity-0 scale-90 translate-y-4 invisible pointer-events-none"
-      )}
+      style={{
+        position: "fixed",
+        bottom: "32px",
+        right: "32px",
+        zIndex: 99999,
+        display: isVisible ? "flex" : "none",
+        width: "50px",
+        height: "50px",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+        borderRadius: "9999px",
+        border: "none",
+        backgroundColor: "var(--color-primary, #1e3a8a)",
+        color: "#ffffff",
+      }}
+      className="gradient-cta text-primary-foreground shadow-elevated hover:shadow-glow transition-all duration-300 hover:-translate-y-1 hover:scale-110 focus:outline-none focus:ring-2 focus:ring-ring"
     >
-      <ArrowUp className="h-5 w-5 animate-pulse" />
-    </Button>
+      <ArrowUp style={{ width: "22px", height: "22px" }} />
+    </a>
   );
 }
+
+
+
+

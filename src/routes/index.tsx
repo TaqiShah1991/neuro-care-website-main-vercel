@@ -7,10 +7,8 @@ import {
 } from "lucide-react";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { SectionHeading } from "@/components/common/SectionHeading";
-import { DoctorCard } from "@/components/cards/DoctorCard";
 import { SpecialityCard } from "@/components/cards/SpecialityCard";
 import { CtaBand } from "@/components/common/CtaBand";
-import { DOCTORS } from "@/lib/doctors";
 import { SPECIALITIES } from "@/lib/specialities";
 
 export const Route = createFileRoute("/")({
@@ -150,15 +148,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Doctors */}
-      <section className="gradient-soft py-20">
-        <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading eyebrow="Featured Doctors" title="Meet our trusted specialists" subtitle="Experienced consultants dedicated to your health and recovery." />
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {DOCTORS.map((d) => <DoctorCard key={d.slug} doctor={d} />)}
-          </div>
-        </div>
-      </section>
 
       {/* Health Packages */}
       <section className="container mx-auto px-4 lg:px-8 py-20">

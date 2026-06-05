@@ -7,7 +7,7 @@ export function Logo({ variant = "dark" }: { variant?: "dark" | "light" }) {
       <img
         src={logoUrl}
         alt="Neuro Care Diagnostic Centre & Hospital Logo"
-        className="h-16 md:h-20 w-auto object-contain transition-transform group-hover:scale-105"
+        className="h-24 md:h-28 w-auto object-contain transition-transform group-hover:scale-105"
       />
     </Link>
   );

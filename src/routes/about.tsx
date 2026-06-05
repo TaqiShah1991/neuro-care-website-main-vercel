@@ -34,7 +34,7 @@ const VALUES = [
 const FOUNDERS = [
   {
     name: "Major R. Muhammad Anoosh",
-    role: "Founder & CEO, ADC Marketing (Pvt.) Ltd.",
+    role: "Founder & CEO, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `Major R. Muhammad Anoosh is a visionary entrepreneur, business leader, and the Founder & Chief Executive Officer of ADC Marketing (Pvt.) Ltd. With a strong foundation in leadership, strategic planning, and business development, he has successfully established ADC Marketing as a diversified business group operating across multiple industries. His commitment to excellence, integrity, and innovation has enabled the company to build a reputation for delivering quality services and creating long-term value for clients and stakeholders.
 
 Under his leadership, ADC Marketing has expanded its presence in Real Estate, Construction & Infrastructure Development, Healthcare & Diagnostic Services, Marketing & Advertising Solutions, and Corporate Investments. By combining modern business practices with a customer-centric approach, Major Anoosh continues to drive sustainable growth, foster strategic partnerships, and contribute to the economic development of Pakistan.`,
@@ -42,7 +42,7 @@ Under his leadership, ADC Marketing has expanded its presence in Real Estate, Co
   },
   {
     name: "Rizwan Yousaf",
-    role: "Managing Director",
+    role: "Managing Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `Rizwan Yousaf is a seasoned business professional with over 10 years of experience in Sales, Marketing, Business Development, and Operations Management across the Insurance and Real Estate sectors.
 
 He began his professional journey in 2015 in the insurance industry and, through dedication, strong leadership, and consistent performance, progressed from an entry-level position to the role of Regional Sales Head by 2021. During this period, he successfully led operations across the Northern Region of Pakistan, driving business growth, managing high-performing teams, and implementing effective sales and marketing strategies.
@@ -58,13 +58,13 @@ Rizwan’s professional philosophy is centered on integrity, strategic vision, c
   },
   {
     name: "Muhammad Usman",
-    role: "Co-Founder",
+    role: "Co-Founder, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: "Driving operations and patient experience with a focus on long-term clinic excellence.",
     image: founderUsman,
   },
   {
     name: "Wali Ahmed",
-    role: "Director",
+    role: "Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `I am a business professional with extensive experience in construction tendering, sales, marketing, and investment consultancy.
 
 With over 8 years of experience in preparing and managing tender documentation for construction projects, I have developed strong expertise in project bidding, contract documentation, cost estimation, and procurement processes.
@@ -131,22 +131,24 @@ function About() {
           />
 
           {/* Lead doctor highlight */}
-          <div className="mt-14 grid lg:grid-cols-[1.1fr_1.4fr] gap-8 items-center bg-card border border-border/60 rounded-3xl overflow-hidden shadow-elevated">
-            <div className="aspect-square lg:aspect-auto lg:h-full relative bg-muted min-h-[320px]">
+          <div className="mt-14 grid lg:grid-cols-[320px_1fr] gap-8 items-start bg-card border border-border/60 rounded-3xl overflow-hidden shadow-elevated p-6 md:p-8">
+            <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden bg-muted relative shrink-0">
               <img
                 src={drArif}
                 alt="Dr. Muhammad Arif"
-                className="absolute inset-0 w-full h-full object-cover object-top"
+                className="w-full h-full object-cover object-top"
               />
             </div>
-            <div className="p-8 lg:p-12">
-              <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">
-                <span className="h-1.5 w-1.5 rounded-full bg-teal" />
-                Lead Doctor
-              </span>
-              <h3 className="mt-3 text-3xl md:text-4xl font-bold">Dr. Muhammad Arif</h3>
-              <p className="mt-1 text-primary font-medium">Consultant Neurologist & Stroke Specialist • MBBS, FCPS (Neurology)</p>
-              <p className="mt-5 text-muted-foreground leading-relaxed whitespace-pre-line text-sm md:text-base">
+            <div className="space-y-4">
+              <div>
+                <span className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">
+                  <span className="h-1.5 w-1.5 rounded-full bg-teal" />
+                  Lead Doctor
+                </span>
+                <h3 className="mt-2 text-3xl font-bold text-foreground">Dr. Muhammad Arif</h3>
+                <p className="text-sm text-primary font-semibold mt-1">Consultant Neurologist & Stroke Specialist • MBBS, FCPS (Neurology)</p>
+              </div>
+              <p className="text-muted-foreground leading-relaxed whitespace-pre-line text-sm md:text-base">
                 {`Dr. Muhammad Arif, MBBS, FCPS (Neurology) is a highly qualified and accomplished Consultant Neurologist and Stroke Specialist with extensive expertise in the diagnosis, treatment, and management of disorders affecting the brain, spinal cord, nerves, and muscles. With a strong commitment to clinical excellence, evidence-based medicine, and compassionate patient care, he has established himself as a trusted name in the field of neurology.
 
 Dr. Arif is currently serving at Shaheed Saif ur Rehman Government Teaching Hospital, Gilgit, where he not only provides advanced neurological and stroke care services but also plays a significant role in the administration and management of the hospital. His leadership and dedication contribute to the continuous improvement of healthcare services and patient outcomes in the region.
@@ -159,9 +161,11 @@ Dr. Arif specializes in the management of stroke, epilepsy, headaches and migrai
 
 Through his clinical expertise, leadership, and unwavering dedication to improving neurological healthcare, Dr. Muhammad Arif continues to make a significant contribution to the advancement of neurology services in Gilgit-Baltistan and across Pakistan.`}
               </p>
-              <p className="mt-5 text-muted-foreground leading-relaxed">
-                Consulting hours: <span className="text-foreground font-medium">Mon – Sat, 5:00 PM – 9:00 PM</span>
-              </p>
+              <div className="pt-2 border-t border-border/60">
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  Consulting hours: <span className="text-foreground font-semibold">Mon – Sat, 5:00 PM – 9:00 PM</span>
+                </p>
+              </div>
             </div>
           </div>
 

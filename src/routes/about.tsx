@@ -25,10 +25,10 @@ export const Route = createFileRoute("/about")({
 });
 
 const VALUES = [
-  { icon: Target, title: "Our Mission", text: "Make modern, reliable healthcare accessible through expert consultations and accurate diagnostics." },
-  { icon: Eye, title: "Our Vision", text: "Be the most trusted neighborhood polyclinic, recognised for quality and patient experience." },
-  { icon: HeartHandshake, title: "Compassion", text: "Treat every patient with empathy, respect, and clear, honest communication." },
-  { icon: ShieldCheck, title: "Integrity", text: "Evidence-based care, transparent pricing, and reports you can trust." },
+  { icon: Target, title: "Mission", text: "To deliver accessible, affordable, and high-quality healthcare services while promoting medical excellence, advanced diagnostics, and patient-centered treatment for all." },
+  { icon: Eye, title: "Vision", text: "To be the leading healthcare institution in Gilgit-Baltistan, providing world-class medical services through excellence, innovation, and compassionate patient care." },
+  { icon: HeartHandshake, title: "Compassion", text: "We treat every patient with dignity, empathy, and respect, ensuring that care is delivered with kindness, understanding, and a commitment to improving lives." },
+  { icon: ShieldCheck, title: "Integrity", text: "We uphold the highest standards of honesty, transparency, professionalism, and ethical conduct in every aspect of patient care and healthcare management." },
 ];
 
 const FOUNDERS = [

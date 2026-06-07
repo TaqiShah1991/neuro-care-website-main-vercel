@@ -4,7 +4,7 @@ import { CtaBand } from "@/components/common/CtaBand";
 import { DOCTORS } from "@/lib/doctors";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, GraduationCap, Stethoscope, CalendarCheck } from "lucide-react";
+import { Calendar, Clock, GraduationCap, Stethoscope, CalendarCheck, User } from "lucide-react";
 
 export const Route = createFileRoute("/doctors")({
   head: () => ({
@@ -32,11 +32,20 @@ function Doctors() {
             <Card key={d.slug} className="overflow-hidden hover-lift border-border/60 gradient-card p-6 md:p-8">
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 <div className="w-full sm:w-72 md:w-64 shrink-0 aspect-[3/4] rounded-2xl overflow-hidden bg-muted shadow-sm relative">
-                  <img
-                    src={d.image}
-                    alt={d.name}
-                    className="w-full h-full object-cover object-top"
-                  />
+                  {d.image ? (
+                    <img
+                      src={d.image}
+                      alt={d.name}
+                      className="w-full h-full object-cover object-top"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center text-center p-4 bg-muted">
+                      <div>
+                        <User className="h-12 w-12 mx-auto text-muted-foreground/30 mb-2" />
+                        <p className="text-xs font-medium text-muted-foreground/50">Photo Placeholder</p>
+                      </div>
+                    </div>
+                  )}
                   {d.lead && (
                     <span className="absolute top-3 left-3 inline-flex items-center gap-1.5 rounded-full bg-primary/95 px-3 py-1 text-xs font-semibold text-primary-foreground backdrop-blur-sm shadow-sm">
                       <span className="h-1.5 w-1.5 rounded-full bg-teal animate-pulse" />

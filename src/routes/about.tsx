@@ -10,7 +10,7 @@ import drArif from "@/assets/doctor-arif.jpg";
 import founderAnoosh from "@/assets/founder-anoosh.jpg";
 import founderRizwan from "@/assets/founder-rizwan.jpg";
 import founderUsman from "@/assets/founder-usman.jpg";
-import founderAli from "@/assets/founder-ali.jpg";
+import founderWali from "@/assets/founder-wali.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -58,7 +58,7 @@ Rizwan’s professional philosophy is centered on integrity, strategic vision, c
   },
   {
     name: "Muhammad Usman",
-    role: "Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
+    role: "Co-Founder & Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `Mr. HM Usman is a dynamic business professional and qualified engineer with over five years of experience in sales and marketing across diverse industries. Combining technical expertise with strong business acumen, he has successfully contributed to business development, strategic planning, client relationship management, and market expansion initiatives.
 
 As the Chief Financial Officer (CFO), Mr. Usman plays a pivotal role in overseeing the organization’s financial operations, budgeting, financial planning, and strategic decision-making. His analytical approach, leadership skills, and commitment to operational excellence have been instrumental in driving sustainable growth and organizational success. With a strong focus on innovation, financial discipline, and business development, he continues to contribute significantly to the achievement of the company’s long-term objectives.`,
@@ -66,7 +66,7 @@ As the Chief Financial Officer (CFO), Mr. Usman plays a pivotal role in overseei
   },
   {
     name: "Wali Ahmed",
-    role: "Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
+    role: "Co-Founder & Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `I am a business professional with extensive experience in construction tendering, sales, marketing, and investment consultancy.
 
 With over 8 years of experience in preparing and managing tender documentation for construction projects, I have developed strong expertise in project bidding, contract documentation, cost estimation, and procurement processes.
@@ -74,7 +74,7 @@ With over 8 years of experience in preparing and managing tender documentation f
 I am currently serving as Director Sales & Marketing at ADC Marketing Pvt. Ltd., where I have been working for the past 5 years. In this role, I am responsible for business development, strategic marketing, client relationship management, and investment consultancy. Throughout my tenure, I have successfully secured authorized dealership agreements for various housing societies and residential apartment projects, contributing significantly to business growth and market expansion. My experience also includes identifying growth opportunities, advising clients on investment strategies, and leading successful sales and marketing initiatives.
 
 My professional approach is centered on delivering excellence, fostering long-term business relationships, and creating value for clients through strategic planning and effective execution.`,
-    image: founderAli,
+    image: founderWali,
   },
 ];
 

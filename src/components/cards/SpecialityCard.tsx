@@ -16,6 +16,7 @@ export function SpecialityCard({ speciality }: { speciality: Speciality }) {
         <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">{speciality.description}</p>
         <Link
           to="/doctors"
+          hash={speciality.doctorSlug}
           className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary hover:gap-2 transition-all"
         >
           Learn More <ArrowRight className="h-3.5 w-3.5" />

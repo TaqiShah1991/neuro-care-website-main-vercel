@@ -42,4 +42,13 @@ export const DOCTORS: Doctor[] = [
     days: "Monday – Saturday",
     timings: "By Appointment",
   },
+  {
+    slug: "dr-muhammad-ikhlaq",
+    name: "Dr. Muhammad Ikhlaq",
+    speciality: "Pulmonology",
+    qualification: "MBBS, DTCD (UoK), MSPH (SZABIST), MCPS (J.P.M.C) Karachi",
+    bio: "Dr. Muhammad Ikhlaq is a highly qualified and dedicated Consultant Pulmonologist with extensive expertise in the diagnosis and treatment of respiratory and chest diseases. Dr. Ikhlaq has developed a strong reputation for managing a wide range of pulmonary conditions, including asthma, chronic obstructive pulmonary disease (COPD), respiratory infections, and critical respiratory care. He is currently serving as a valued member of Neuro Care Hospital Gilgit, where he provides patient-centered care with a commitment to clinical excellence and compassionate treatment. His multidisciplinary approach, combined with his public health background, enables him to deliver comprehensive healthcare solutions while promoting respiratory wellness within the community.",
+    days: "Monday – Saturday",
+    timings: "By Appointment",
+  },
 ];

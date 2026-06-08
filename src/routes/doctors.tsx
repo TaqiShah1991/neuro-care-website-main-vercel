@@ -29,7 +29,7 @@ function Doctors() {
       <section className="container mx-auto px-4 lg:px-8 py-20">
         <div className="space-y-8 max-w-5xl mx-auto">
           {DOCTORS.map((d) => (
-            <Card key={d.slug} className="overflow-hidden hover-lift border-border/60 gradient-card p-6 md:p-8">
+            <Card id={d.slug} key={d.slug} className="overflow-hidden hover-lift border-border/60 gradient-card p-6 md:p-8 scroll-mt-24">
               <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
                 <div className="w-full sm:w-72 md:w-64 shrink-0 aspect-[3/4] rounded-2xl overflow-hidden bg-muted shadow-sm relative">
                   {d.image ? (

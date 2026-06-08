@@ -8,9 +8,9 @@ export const Route = createFileRoute("/specialities")({
   head: () => ({
     meta: [
       { title: "Specialities — Expert Medical Care | Neuro Care" },
-      { name: "description", content: "Consultations across cardiology, neurology, ENT, orthopedics, pediatrics, gynecology, dermatology, gastroenterology, and radiology." },
+      { name: "description", content: "Consultations across cardiology, pulmonology, neurology, nephrology, and radiology / diagnostics." },
       { property: "og:title", content: "Specialities at Neuro Care and Diagnostic Center" },
-      { property: "og:description", content: "Expert care across 10 leading medical specialities." },
+      { property: "og:description", content: "Expert care across 5 leading medical specialities." },
     ],
   }),
   component: Specialities,
@@ -21,7 +21,7 @@ function Specialities() {
     <>
       <PageHero
         eyebrow="Specialities"
-        title="Expert care across 10 leading specialities"
+        title="Expert care across 5 leading specialities"
         subtitle="From routine consultations to specialised treatments, our team is here to support your health journey."
       />
       <section className="container mx-auto px-4 lg:px-8 py-16">

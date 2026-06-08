@@ -73,7 +73,7 @@ function Home() {
             </p>
             <ul className="space-y-2.5">
               {[
-                "Specialist consultations across 10+ disciplines",
+                "Specialist consultations across 5 leading disciplines",
                 "Accurate in-house lab and diagnostic services",
                 "Friendly, patient-first appointment process",
                 "Affordable health and wellness packages",
@@ -137,7 +137,7 @@ function Home() {
       <section className="container mx-auto px-4 lg:px-8 py-20">
         <SectionHeading eyebrow="Popular Specialities" title="Expert care across leading disciplines" subtitle="Consult with experienced specialists for a wide range of medical needs." />
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {SPECIALITIES.slice(0, 6).map((s) => (
+          {SPECIALITIES.map((s) => (
             <SpecialityCard key={s.slug} speciality={s} />
           ))}
         </div>

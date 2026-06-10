@@ -4,7 +4,7 @@ export const SITE = {
   tagline: "Advanced Healthcare, Trusted Diagnostics, Compassionate Care.",
   phone: "+92 333 6667578",
   email: "info@neurocare.example",
-  address: "123 Wellness Avenue, Medical District, Gilgit",
+  address: "Opposite Post Office public chowk jutial gilgit",
   hours: "Mon – Sat: 9:00 AM – 10:00 PM • Sun: Emergency / Limited Hours",
   social: {
     facebook: "#",

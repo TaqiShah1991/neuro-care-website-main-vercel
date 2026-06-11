@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import {
   ShieldCheck, Award, HeartHandshake, Microscope, ArrowRight, CheckCircle2,
-  CalendarCheck, ClipboardList, Stethoscope, Smile, Quote, Pill, ScanLine, Building2,
+  CalendarCheck, ClipboardList, Stethoscope, Smile, Quote, Pill, ScanLine, Building2, Magnet,
 } from "lucide-react";
 import { HeroCarousel } from "@/components/home/HeroCarousel";
 import { SectionHeading } from "@/components/common/SectionHeading";
@@ -111,12 +111,13 @@ function Home() {
       {/* Facilities preview */}
       <section className="gradient-soft py-20">
         <div className="container mx-auto px-4 lg:px-8">
-          <SectionHeading eyebrow="Our Facilities" title="Everything you need under one roof" subtitle="OPD consultations, an on-site pharmacy, and a modern diagnostic lab — all designed around your comfort." />
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
+          <SectionHeading eyebrow="Our Facilities" title="Everything you need under one roof" subtitle="State-of-the-art MRI diagnostics, OPD consultations, pharmacy, and laboratory — designed around your comfort." />
+          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Building2, title: "OPD", text: "Comfortable outpatient department with specialists across disciplines." },
-              { icon: Pill, title: "Pharmacy", text: "On-site pharmacy for convenient access to prescribed medicines." },
+              { icon: Building2, title: "OPD Services", text: "Comfortable outpatient department with specialists across disciplines." },
+              { icon: Magnet, title: "MRI Diagnostics", text: "High-resolution scanning with advanced magnetic resonance imaging." },
               { icon: Microscope, title: "Lab & Diagnostics", text: "Accurate, timely lab reports from our modern in-house facility." },
+              { icon: Pill, title: "On-site Pharmacy", text: "Providing quick and convenient access to prescribed medications." },
             ].map(({ icon: Icon, title, text }) => (
               <Card key={title} className="p-7 hover-lift border-border/60 gradient-card group">
                 <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl gradient-cta text-primary-foreground shadow-soft">

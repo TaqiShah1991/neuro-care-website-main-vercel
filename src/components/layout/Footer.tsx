@@ -4,10 +4,10 @@ import { Logo } from "@/components/brand/Logo";
 import { SITE, NAV } from "@/lib/site";
 
 const facilities = [
-  { label: "OPD", to: "/facilities" },
-  { label: "Pharmacy", to: "/facilities" },
+  { label: "OPD Services", to: "/facilities" },
+  { label: "MRI Diagnostics", to: "/facilities" },
   { label: "Lab & Diagnostics", to: "/facilities" },
-  { label: "Health Packages", to: "/specialities" },
+  { label: "On-site Pharmacy", to: "/facilities" },
 ] as const;
 
 export function Footer() {

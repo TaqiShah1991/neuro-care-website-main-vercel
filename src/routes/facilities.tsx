@@ -2,19 +2,20 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Button } from "@/components/ui/button";
 import { PageHero } from "@/components/common/PageHero";
 import { CtaBand } from "@/components/common/CtaBand";
-import { Building2, Pill, Microscope, CheckCircle2, ArrowRight, type LucideIcon } from "lucide-react";
+import { Building2, Pill, Microscope, Magnet, CheckCircle2, ArrowRight, type LucideIcon } from "lucide-react";
 
 import opdImg from "@/assets/facility-opd.jpg";
 import pharmacyImg from "@/assets/facility-pharmacy.jpg";
 import labImg from "@/assets/facility-lab.jpg";
+import mriImg from "@/assets/facility-mri.png";
 
 export const Route = createFileRoute("/facilities")({
   head: () => ({
     meta: [
-      { title: "Facilities — OPD, Pharmacy & Lab | Neuro Care" },
-      { name: "description", content: "Modern OPD, on-site pharmacy, and diagnostic laboratory designed for patient comfort and accurate, timely care." },
+      { title: "Facilities — MRI, OPD, Pharmacy & Lab | Neuro Care" },
+      { name: "description", content: "State-of-the-art MRI scanning, modern OPD, on-site pharmacy, and diagnostic laboratory designed for patient comfort and accurate, timely care." },
       { property: "og:title", content: "Facilities at Neuro Care and Diagnostic Center" },
-      { property: "og:description", content: "OPD, pharmacy, and lab — all under one roof." },
+      { property: "og:description", content: "MRI, OPD, pharmacy, and lab — all under one roof." },
     ],
   }),
   component: Facilities,
@@ -37,11 +38,11 @@ const FACILITIES: Facility[] = [
     image: opdImg,
   },
   {
-    icon: Pill,
-    title: "Pharmacy",
-    description: "An on-site pharmacy providing convenient access to prescribed medicines and healthcare products.",
-    benefits: ["Genuine, quality-checked medicines", "Pharmacist-led guidance", "Prescription fulfilment on site", "Wellness and healthcare products"],
-    image: pharmacyImg,
+    icon: Magnet,
+    title: "MRI — Magnetic Resonance Imaging",
+    description: "High-resolution diagnostic imaging using state-of-the-art MRI scanner for precise and detailed scans of the brain, spine, and musculoskeletal system.",
+    benefits: ["High-field MRI technology", "Detailed neurological diagnostics", "Calm and comfortable scanning room", "Fast, high-fidelity report generation"],
+    image: mriImg,
   },
   {
     icon: Microscope,
@@ -49,6 +50,13 @@ const FACILITIES: Facility[] = [
     description: "A modern diagnostic laboratory offering reliable testing services with accurate and timely reports.",
     benefits: ["Comprehensive lab test menu", "Modern, well-maintained equipment", "Fast turnaround on reports", "Affordable health packages"],
     image: labImg,
+  },
+  {
+    icon: Pill,
+    title: "Pharmacy",
+    description: "An on-site pharmacy providing convenient access to prescribed medicines and healthcare products.",
+    benefits: ["Genuine, quality-checked medicines", "Pharmacist-led guidance", "Prescription fulfilment on site", "Wellness and healthcare products"],
+    image: pharmacyImg,
   },
 ];
 
@@ -67,10 +75,10 @@ function Facilities() {
           const reverse = idx % 2 === 1;
           return (
             <div key={f.title} className={`grid lg:grid-cols-2 gap-10 lg:gap-16 items-center ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
-              <div className="relative">
-                <div className="absolute -inset-3 rounded-3xl gradient-cta opacity-10 blur-2xl" />
+              <div className="relative group">
+                <div className="absolute -inset-3 rounded-3xl gradient-cta opacity-10 blur-2xl group-hover:opacity-20 transition-opacity duration-500" />
                 <div className="relative aspect-[4/3] rounded-3xl overflow-hidden border border-border/60 shadow-elevated">
-                  <img src={f.image} alt={f.title} loading="lazy" className="h-full w-full object-cover" />
+                  <img src={f.image} alt={f.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-750 ease-out group-hover:scale-105" />
                 </div>
               </div>
 
@@ -80,10 +88,10 @@ function Facilities() {
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold leading-tight">{f.title}</h2>
                 <p className="text-muted-foreground leading-relaxed">{f.description}</p>
-                <ul className="grid sm:grid-cols-2 gap-2.5 pt-1">
+                <ul className="grid sm:grid-cols-2 gap-3 pt-2">
                   {f.benefits.map((b) => (
-                    <li key={b} className="flex items-start gap-2.5 text-sm text-foreground/85">
-                      <CheckCircle2 className="h-5 w-5 text-teal shrink-0 mt-0.5" />
+                    <li key={b} className="flex items-center gap-2.5 p-2.5 rounded-xl bg-accent/40 border border-border/40 hover:border-teal/30 hover:bg-teal/5 transition-all duration-300 text-sm text-foreground/85">
+                      <CheckCircle2 className="h-4 w-4 text-teal shrink-0" />
                       <span>{b}</span>
                     </li>
                   ))}

@@ -57,8 +57,8 @@ Rizwan’s professional philosophy is centered on integrity, strategic vision, c
     image: founderRizwan,
   },
   {
-    name: "Muhammad Usman",
-    role: "Co-Founder & Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
+    name: "Engr HM Usman",
+    role: "Founder & Director, ADC Marketing (Pvt.) Ltd. & Neuro Care",
     bio: `Mr. HM Usman is a dynamic business professional and qualified engineer with over five years of experience in sales and marketing across diverse industries. Combining technical expertise with strong business acumen, he has successfully contributed to business development, strategic planning, client relationship management, and market expansion initiatives.
 
 As the Chief Financial Officer (CFO), Mr. Usman plays a pivotal role in overseeing the organization’s financial operations, budgeting, financial planning, and strategic decision-making. His analytical approach, leadership skills, and commitment to operational excellence have been instrumental in driving sustainable growth and organizational success. With a strong focus on innovation, financial discipline, and business development, he continues to contribute significantly to the achievement of the company’s long-term objectives.`,

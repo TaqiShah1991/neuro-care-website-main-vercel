@@ -81,8 +81,8 @@ function Contact() {
                   </span>
                   <div>
                     <p className="text-xs uppercase tracking-wider text-muted-foreground">Clinic Timings</p>
-                    <p className="font-medium text-foreground">Mon – Sat: 9:00 AM – 10:00 PM</p>
-                    <p className="text-sm text-muted-foreground">Sunday: Emergency / Limited Hours</p>
+                    <p className="font-medium text-foreground">Monday to Saturday: 3:00 PM – 9:00 PM</p>
+                    <p className="text-sm text-muted-foreground">Sunday: 10:00 AM – 3:00 PM</p>
                   </div>
                 </li>
               </ul>
